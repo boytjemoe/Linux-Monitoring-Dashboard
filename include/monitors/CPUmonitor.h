@@ -1,11 +1,14 @@
 #pragma once
 
 #include <string>
+#include <vector>
 
 class CPUmonitor {
     public:
         float getCPUusage() const;
     
     private:
-        float ReadCPUusage(std::string CPUpath) const;
+        std::vector<double> readCPUusage(std::string CPUpath) const;
+        double calcCPUusage() const;
+        void setPrevious(std::vector<double> values);
 };

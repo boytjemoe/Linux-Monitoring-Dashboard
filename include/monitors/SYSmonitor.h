@@ -2,7 +2,7 @@
 
 #include <string>
 
-class LinuxParser {
+class SYSmonitor {
     public:
         std::string getOS() const;
     
